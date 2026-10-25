@@ -1,0 +1,24 @@
+/* 设计主题（全局设计令牌）
+   品牌色：天空蓝 → 青，呼应「旅行 / 天空 / 海洋」主题。
+   所有页面统一从这里取颜色、圆角、阴影，改主题只需改这一个文件。
+   同时覆盖 Vant 4 的 CSS 变量，让 Vant 组件（按钮、tabbar、徽标等）自动跟随品牌色。 */
+:root {
+  /* 品牌色与渐变 */
+  --brand: #2f80ed;
+  --brand-cyan: #56ccf2;
+  --brand-gradient: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
+
+  /* 页面与卡片 */
+  --page-bg: #f6f8fc;
+  --card-radius: 16px;
+  --card-shadow: 0 4px 16px rgba(47, 128, 237, 0.08);
+
+  /* 文字色阶 */
+  --text-main: #1f2d3d;
+  --text-sub: #6b7a8d;
+  --text-light: #9aa7b8;
+
+  /* Vant 主题变量覆盖：主色改为品牌蓝（影响按钮、tabbar 激活态等） */
+  --van-primary-color: var(--brand);
+  --van-blue: var(--brand);
+}

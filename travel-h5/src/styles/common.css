@@ -1,0 +1,57 @@
+/* 公共布局与组件样式：页面骨架、卡片、区块标题等跨页面复用的类 */
+
+.page-container {
+  min-height: 100vh;
+  background-color: var(--page-bg);
+  /* 给底部 tabbar（50px）留出空间，避免内容被遮挡 */
+  padding-bottom: 70px;
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.page-content {
+  padding: 16px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: var(--card-radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+.section-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+/* 品牌渐变主按钮：用于「开始规划」「保存设置」等主操作 */
+.primary-button {
+  background: var(--brand-gradient) !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: 0 6px 16px rgba(47, 128, 237, 0.35);
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* 对话框内的提示文字（收藏删除、清空数据等确认弹窗共用） */
+.dialog-text {
+  padding: 24px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-sub);
+  line-height: 1.6;
+}

@@ -1,0 +1,16 @@
+# 依赖目录（体积大且可重新安装，绝不入库）
+node_modules/
+
+# 环境变量文件（含 API 密钥，绝不入库；模板见 travel-server/.env.example）
+.env
+.env.local
+
+# 构建产物
+dist/
+
+# 编辑器/工具产生的本地目录
+.trae/
+.DS_Store
+
+# 日志
+*.log

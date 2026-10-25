@@ -1,0 +1,28 @@
+/* 全局重置样式：移动端优先
+   （原文件是 Vite 脚手架模板残留，其中 #app 限宽 1126px、文字居中、暗色模式等
+   样式会破坏移动端 H5 布局，已全部移除，只保留必要的 reset） */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei',
+    'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  color: #1f2d3d;
+  background: #f6f8fc;
+  -webkit-font-smoothing: antialiased;
+  /* 去掉移动端点击时的高亮灰色块，观感更接近原生 App */
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  min-height: 100vh;
+}
